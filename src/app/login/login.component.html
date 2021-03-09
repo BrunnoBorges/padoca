@@ -1,0 +1,63 @@
+<section class="center-container">
+    <mat-card class="example-card">
+        <div class="logo">
+            <div class="circulo lime"><span> PD </span></div>
+            <div class="custon-text">Padoca</div>
+        </div>
+        <mat-card-content>
+            <mat-tab-group mat-align-tabs="center">
+                <mat-tab label="Login">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>E-mail</mat-label>
+                            <input matInput type="email" placeholder="seuemail@gmail.com">
+                            <mat-icon matSuffix>alternate_email</mat-icon>
+                        </mat-form-field>
+                        
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Senha</mat-label>
+                            <input matInput type="password" placeholder="Senha">
+                            <mat-icon matSuffix>vpn_key</mat-icon>
+                        </mat-form-field>
+                        <div class="button-container">
+                            <button mat-fab color="primary" (click)="login()">
+                                <mat-icon>arrow_forward</mat-icon>
+                            </button>
+                        </div>
+                    </form>
+                </mat-tab>
+                <mat-tab label="Register">
+                    <form class="example-form">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Nome</mat-label>
+                            <input matInput placeholder="Nome Completo">
+                            <mat-icon matSuffix>face</mat-icon>
+                        </mat-form-field>
+                        
+                        <mat-form-field class="example-full-width">
+                            <mat-label>E-mail</mat-label>
+                            <input matInput type="email" placeholder="seuemail@gmail.com">
+                            <mat-icon matSuffix>alternate_email</mat-icon>
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Senha</mat-label>
+                            <input matInput type="password" placeholder="Senha">
+                            <mat-icon matSuffix>vpn_key</mat-icon>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                                <mat-label>Confirmar Senha</mat-label>
+                                <input matInput type="password" placeholder="Confirmar Senha">
+                                <mat-icon matSuffix>vpn_key</mat-icon>
+                            </mat-form-field>
+                        <div class="button-container">
+                            <button mat-fab color="primary" (click)="register()">
+                                <mat-icon>arrow_forward</mat-icon>
+                            </button>
+                        </div>
+                    </form>
+                </mat-tab>
+            </mat-tab-group>
+        </mat-card-content>
+    </mat-card>
+</section>

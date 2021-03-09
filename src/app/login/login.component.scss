@@ -1,0 +1,63 @@
+.center-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .circulo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 15px;
+      transition: 0.3s ease;
+      &:hover {
+        transform: rotateY(180deg);
+      }
+    }
+    .custon-text{
+        margin: 0;
+        font-size: 1.5rem;
+        color: rgba(0,0,0,.26);
+    }
+    .lime {
+      background: transparent;
+      border-top-width: 0px;
+      border-right-color: #673ab7;
+      border-right-style: solid;
+      border-right-width: 4px;
+      border-bottom-width: 0px;
+      border-left-width: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      span {
+        color: #673ab7;
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+}
+
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
