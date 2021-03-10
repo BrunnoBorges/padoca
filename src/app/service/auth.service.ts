@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { UserLogin } from '../login/usuario';
+import { UserLogin, UserRegister } from '../models/usuario';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -21,5 +21,9 @@ export class AuthService {
     } else [
       this.userAutenticator = false
     ]
+  }
+
+  fazerCadastro(register: UserRegister) {
+
   }
 }
