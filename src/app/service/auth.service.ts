@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { UsuarioLogin } from '../login/usuario';
+import { UserLogin } from '../login/usuario';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -7,19 +7,19 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  usuarioAutenticado: boolean ;
+  userAutenticator: boolean ;
 
   constructor(private router: Router) { 
-    this.usuarioAutenticado = false;
+    this.userAutenticator = false;
   }
 
 
-  fazerLogin(usuario: UsuarioLogin) {
-    if(usuario.email === 'obrunnodiego@gmail.com' && usuario.senha === '12345') {
-      this.usuarioAutenticado = true;
+  fazerLogin(user: UserLogin) {
+    if(user.email === 'obrunnodiego@gmail.com' && user.senha === '12345') {
+      this.userAutenticator = true;
       this.router.navigate(['home']);
     } else [
-      this.usuarioAutenticado = false
+      this.userAutenticator = false
     ]
   }
 }

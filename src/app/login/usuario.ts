@@ -1,11 +1,11 @@
-export class UsuarioLogin {
+export class UserLogin {
     email: string;
     senha: string
 }
 
-export class UsuarioRegister {
-    nome: string;
+export class UserRegister {
+    name: string;
     email: string;
-    senha: string;
-    senhaConfirm: string;
+    password: string;
+    passwordConfirma: string;
 }

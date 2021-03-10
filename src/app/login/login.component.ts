@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsuarioLogin } from './usuario';
+import { UserLogin, UserRegister } from './usuario';
 import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
@@ -9,21 +9,24 @@ import { AuthService } from 'src/app/service/auth.service';
 })
 export class LoginComponent implements OnInit {
 
-  usuario: UsuarioLogin;
+  user: UserLogin;
+  register: UserRegister;
 
   constructor(private authService: AuthService) {
-    this.usuario =  new UsuarioLogin();
+    this.user =  new UserLogin();
+    this.register = new UserRegister();
    }
 
   ngOnInit(): void {
   }
 
-  login() {
-    console.log('--> Logou <--', this.usuario);
-    this.authService.fazerLogin(this.usuario);
+  loginUser() {
+    console.log('--> Logou <--', this.user);
+    this.authService.fazerLogin(this.user);
   }
 
-  register() {
+  registerUser() {
     console.log('--> Cadastrou <--');
+    // this.authService.fazerCadastro(this.register);
   }
 }
