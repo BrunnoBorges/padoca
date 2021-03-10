@@ -16,12 +16,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './views/login/login.component';
 import { AuthService } from './service/auth.service';
 import { HomeComponent } from './views/home/home.component';
+import { ProductsComponent } from './views/products/products.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    ProductsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
