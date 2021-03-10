@@ -10,17 +10,17 @@
                     <form class="example-form">
                         <mat-form-field class="example-full-width">
                             <mat-label>E-mail</mat-label>
-                            <input matInput type="email" placeholder="seuemail@gmail.com">
+                            <input matInput id="emailLogin" type="email" placeholder="seuemail@gmail.com" name="email" [(ngModel)]="usuario.email">
                             <mat-icon matSuffix>alternate_email</mat-icon>
                         </mat-form-field>
                         
                         <mat-form-field class="example-full-width">
                             <mat-label>Senha</mat-label>
-                            <input matInput type="password" placeholder="Senha">
+                            <input matInput id="senhaLogin" type="password" placeholder="Senha" name="senha" [(ngModel)]="usuario.senha">
                             <mat-icon matSuffix>vpn_key</mat-icon>
                         </mat-form-field>
                         <div class="button-container">
-                            <button mat-fab color="primary" (click)="login()">
+                            <button mat-fab color="primary" type="submit" (click)="login()">
                                 <mat-icon>arrow_forward</mat-icon>
                             </button>
                         </div>
@@ -30,28 +30,28 @@
                     <form class="example-form">
                         <mat-form-field class="example-full-width">
                             <mat-label>Nome</mat-label>
-                            <input matInput placeholder="Nome Completo">
+                            <input matInput id="nameRegister" placeholder="Nome Completo">
                             <mat-icon matSuffix>face</mat-icon>
                         </mat-form-field>
                         
                         <mat-form-field class="example-full-width">
                             <mat-label>E-mail</mat-label>
-                            <input matInput type="email" placeholder="seuemail@gmail.com">
+                            <input matInput id="emailRegister" type="email" placeholder="seuemail@gmail.com">
                             <mat-icon matSuffix>alternate_email</mat-icon>
                         </mat-form-field>
 
                         <mat-form-field class="example-full-width">
                             <mat-label>Senha</mat-label>
-                            <input matInput type="password" placeholder="Senha">
+                            <input matInput id="senhaRegister" type="password" placeholder="Senha">
                             <mat-icon matSuffix>vpn_key</mat-icon>
                         </mat-form-field>
                         <mat-form-field class="example-full-width">
                                 <mat-label>Confirmar Senha</mat-label>
-                                <input matInput type="password" placeholder="Confirmar Senha">
+                                <input matInput id="senhaRegisterConfirm" type="password" placeholder="Confirmar Senha">
                                 <mat-icon matSuffix>vpn_key</mat-icon>
                             </mat-form-field>
                         <div class="button-container">
-                            <button mat-fab color="primary" (click)="register()">
+                            <button mat-fab color="primary" type="submit" (click)="register()">
                                 <mat-icon>arrow_forward</mat-icon>
                             </button>
                         </div>
