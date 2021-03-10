@@ -3,7 +3,7 @@
     div {
         display: flex;
         align-items: center;
-        color: #3f51b5 ;
+        color: #ffffff ;
     }
 }
 
@@ -25,12 +25,12 @@
     .custon-text{
         margin: 0;
         font-size: 1.5rem;
-        color: rgba(0,0,0,.26);
+        color: #fff;
     }
     .lime {
       background: transparent;
       border-top-width: 0px;
-      border-right-color: #673ab7;
+      border-right-color: #fff;
       border-right-style: solid;
       border-right-width: 4px;
       border-bottom-width: 0px;
@@ -40,7 +40,7 @@
       align-items: center;
     
       span {
-        color: #673ab7;
+        color: #fff;
         font-size: 20px;
         margin: 0;
       }
