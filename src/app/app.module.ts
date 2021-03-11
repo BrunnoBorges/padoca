@@ -7,6 +7,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatSelectModule} from '@angular/material/select';
+import {MatStepperModule} from '@angular/material/stepper';
 
 import {FormsModule} from '@angular/forms';
 
@@ -37,7 +40,10 @@ import { HeaderComponent } from './components/header/header.component';
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    FormsModule
+    FormsModule,
+    MatSidenavModule,
+    MatSelectModule,
+    MatStepperModule
 
   ],
   providers: [AuthService],

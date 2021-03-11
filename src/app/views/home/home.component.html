@@ -1,6 +1,65 @@
 <app-header></app-header>
-<section>
-  <div>
-    <h1>Cadastrar Produtos</h1>
+<section class="section">
+  <div class="fundo">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Cadastrar Produto</mat-card-title>
+        </mat-card-header>
+        
+        <mat-card-content>
+         <div>
+            <mat-form-field appearance="outline" class="textareaForm">
+                <mat-label>Nome</mat-label>
+                <input matInput placeholder="Nome do Produto">
+                <mat-icon matSuffix>create</mat-icon>
+              </mat-form-field>
+         </div>
+         <div>
+            <mat-form-field appearance="outline" class="inputForm">
+              <mat-label>Tipo</mat-label>
+              <mat-select [(value)]="selected">
+                  <mat-option value="option0">Tipo do Produto</mat-option>
+                <mat-option value="option1">Unidade</mat-option>
+                <mat-option value="option2">Kilos</mat-option>
+                <mat-option value="option3">Gramas</mat-option>
+                <mat-option value="option4">Litros</mat-option>
+              </mat-select>
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline" class="inputForm">
+                <mat-label>Peso</mat-label>
+                <input matInput placeholder="Peso do Produto">
+                <mat-icon matSuffix>how_to_vote</mat-icon>
+              </mat-form-field>
+         </div>
+         <div>
+            <mat-form-field appearance="outline" class="inputForm">
+                <mat-label>Quantidade</mat-label>
+                <input matInput placeholder="Qtd do Produto">
+                <mat-icon matSuffix>workspaces</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="inputForm">
+                <mat-label>QValor</mat-label>
+                <input matInput placeholder="Preço do Produto">
+                <mat-icon matSuffix>paid</mat-icon>
+            </mat-form-field>
+         </div>
+         <div>
+            <mat-form-field class="example-full-width textareaForm">
+                <mat-label>Detalhe</mat-label>
+                <textarea matInput placeholder="Descreva aqui sobre seu produto"></textarea>
+              </mat-form-field>
+         </div>
+         <div class="imageForm">
+            <input class="ng-hide" id="input-file-id" multiple type="file" name="file" id="file" (change)="onFileChanged($event)" />
+         </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <div class="button-container">
+            <button mat-stroked-button color="primary">Limpar</button>
+            <button mat-flat-button color="primary">Salvar</button>
+          </div>
+        </mat-card-actions>
+      </mat-card>
   </div>
 </section>
