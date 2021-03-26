@@ -1,6 +1,23 @@
 <app-header></app-header>
 <section class="section">
   <div class="fundo">
-    <h1>Produtos Cadastrados</h1>
+    <div class="card-box">
+      <mat-card class="example-card" *ngFor="let item of productsDetails">
+        <img mat-card-image [src]="item.image">
+        <mat-list>
+          <div mat-subheader> {{item.product}} </div>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <mat-icon mat-list-icon>workspaces</mat-icon>
+            <div mat-line>{{item.type}}</div>
+            <div mat-line> {{item.qtd}} </div>
+          </mat-list-item>
+        </mat-list>
+        <mat-card-subtitle>{{item.description}}</mat-card-subtitle>
+        <mat-card-actions>
+          <button  mat-stroked-button color="primary">Editar</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
   </div>
 </section>
